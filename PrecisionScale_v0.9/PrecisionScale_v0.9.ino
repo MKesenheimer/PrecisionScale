@@ -36,6 +36,7 @@ HX711_ADC loadCell(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
 
 void setup() {
   pinMode(BUTTON_PIN, INPUT);
+  digitalWrite(BUTTON_PIN, HIGH); // pull-up resistor
     
   display.setBrightness(BRIGHT_3);
   display.showString("----");
@@ -81,7 +82,7 @@ bool checkTare() {
     buttonOut = false;
   }
 
-  return buttonOut;
+  return !buttonOut;
 }
 
 void displayWeight(float value) {
