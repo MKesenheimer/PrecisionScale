@@ -18,3 +18,7 @@ This could be done by uploading the sketch `Calibration.ino` from the `HX711_ADC
 After the calibration routine has finished, a calibration value is obtained which then can be inserted into the sketch `PrecisionScale_v0.9.ino`.
 
 Apart from that, using the scale should be self-explanatory.
+
+## Construction
+STL-files for 3D-printing a case for the scale are included.
+![PrecisionScaleConstruction](https://github.com/MKesenheimer/PrecisionScale/blob/master/Construction1.png)
